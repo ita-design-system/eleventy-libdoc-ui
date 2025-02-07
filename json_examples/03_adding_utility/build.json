@@ -1,0 +1,24 @@
+{
+    "settings": {
+        "separator": "-",
+        "responsiveSeparator": "--",
+        "utilitiesPrefix": "u",
+        "cssVariablesPrefix": "foo",
+        "screenSizes": {}
+    },
+    "tokens": {},
+    "properties": {
+        "display": {
+            "prefix": "d",
+            "generate_from": "",
+            "values": [
+                "flex",
+                "inline-flex",
+                "none"
+            ],
+            "names": [],
+            "responsive": false,
+            "generate_utility": true
+        }
+    }
+}
