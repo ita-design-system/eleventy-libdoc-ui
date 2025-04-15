@@ -18,9 +18,19 @@
             "neutral-400": "#E5E5E5",
             "neutral-500": "#BFBFBF",
             "neutral-600": "#999999",
-            "neutral-700": "#666666",
-            "neutral-800": "#333333",
+            "neutral-700": "#444444",
+            "neutral-800": "#252525",
             "neutral-900": "#000000",
+
+            "primary-100": "#FAFCFF",
+            "primary-200": "#E0EEFE",
+            "primary-300": "#7DB8F7",
+            "primary-400": "#3F96F3",
+            "primary-500": "#0074EF",
+            "primary-600": "#0463C9",
+            "primary-700": "#0853A3",
+            "primary-800": "#0B427C",
+            "primary-900": "#0F3156",
 
             "success-100": "#e4f1dd",
             "success-500": "#78ba56",
@@ -43,8 +53,8 @@
             "6": "20px",
             "7": "24px",
             "8": "28px",
-            "9": "32px",
-            "10": "48px"
+            "9": "40px",
+            "10": "56px"
         },
         "spacings": {
             "1": "4px",
@@ -58,6 +68,10 @@
             "9": "56px",
             "10": "64px",
             "11": "80px"
+        },
+        "widths": {
+            "sidebar": "300px",
+            "content": "700px"
         }
     },
     "properties": {
@@ -138,7 +152,7 @@
         "columns": {
             "prefix": "columns",
             "generate_from": "",
-            "values": ["2"],
+            "values": ["2", "3"],
             "names": [],
             "responsive": true,
             "generate_utility": false
@@ -170,8 +184,8 @@
         "bottom": {
             "prefix": "bottom",
             "generate_from": "",
-            "values": ["0%", "50%", "100%"],
-            "names": ["0", "50", "100"],
+            "values": ["0%", "50%", "100%", "60px"],
+            "names": ["0", "50", "100", "60px"],
             "responsive": true,
             "generate_utility": false
         },
@@ -262,6 +276,14 @@
             "responsive": true,
             "generate_utility": false
         },
+        "column-gap": {
+            "prefix": "cgap",
+            "generate_from": "",
+            "values": ["3em"],
+            "names": [],
+            "responsive": true,
+            "generate_utility": false
+        },
         "gap": {
             "prefix": "gap",
             "generate_from": "spacings",
@@ -289,8 +311,8 @@
         "width": {
             "prefix": "w",
             "generate_from": "",
-            "values": ["100%", "auto", "100vw", "300px", "calc(100% - 300px)"],
-            "names": ["100", "auto", "100vw", "300px", "100-300px"],
+            "values": ["100%", "50%", "auto", "100vw", "var(--ita-widths-sidebar)", "calc(100% - var(--ita-widths-sidebar))"],
+            "names": ["100", "50", "auto", "100vw", "sidebar", "100-minus-sidebar"],
             "responsive": true,
             "generate_utility": false
         },
@@ -331,8 +353,8 @@
         "max-width": {
             "prefix": "maxw",
             "generate_from": "",
-            "values": ["100%", "100vw", "1120px"],
-            "names": ["100", "100vw", "1120px"],
+            "values": ["100%", "100vw", "calc(100vw - 2 * var(--ita-spacings-5))"],
+            "names": ["100", "100vw", "sidebar"],
             "responsive": true,
             "generate_utility": false
         },
@@ -347,16 +369,16 @@
         "height": {
             "prefix": "h",
             "generate_from": "",
-            "values": ["100%", "auto", "100vh"],
-            "names": ["100", "auto", "100vh"],
+            "values": ["100%", "auto", "100vh", "500px", "60px", "50px", "calc(100vh - 59px)"],
+            "names": ["100", "auto", "100vh", "500px", "60px", "50px", "sidebar"],
             "responsive": true,
             "generate_utility": false
         },
         "max-height": {
             "prefix": "maxh",
             "generate_from": "",
-            "values": ["100%", "100vh", "80vh", "50vh"],
-            "names": ["100", "100vh", "80vh", "50vh"],
+            "values": ["100%", "100vh", "80vh", "50vh", "200px", "300px"],
+            "names": ["100", "100vh", "80vh", "50vh", "200px", "300px"],
             "responsive": true,
             "generate_utility": false
         },
@@ -614,7 +636,7 @@
             "generate_from": "",
             "values": ["nowrap"],
             "names": [],
-            "responsive": false,
+            "responsive": true,
             "generate_utility": false
         },
         "text-overflow": {
@@ -823,7 +845,7 @@
             "generate_from": "",
             "values": ["0px", "3px", "6px", "12px", "100px"],
             "names": ["0", "1", "2", "3", "4"],
-            "responsive": false,
+            "responsive": true,
             "generate_utility": false
         },
         "border-top-right-radius": {
@@ -831,7 +853,7 @@
             "generate_from": "",
             "values": ["0px", "3px", "6px", "12px", "100px"],
             "names": ["0", "1", "2", "3", "4"],
-            "responsive": false,
+            "responsive": true,
             "generate_utility": false
         },
         "border-bottom-right-radius": {
@@ -839,7 +861,7 @@
             "generate_from": "",
             "values": ["0px", "3px", "6px", "12px", "100px"],
             "names": ["0", "1", "2", "3", "4"],
-            "responsive": false,
+            "responsive": true,
             "generate_utility": false
         },
         "border-bottom-left-radius": {
@@ -847,7 +869,7 @@
             "generate_from": "",
             "values": ["0px", "3px", "6px", "12px", "100px"],
             "names": ["0", "1", "2", "3", "4"],
-            "responsive": false,
+            "responsive": true,
             "generate_utility": false
         },
         "background-size": {
