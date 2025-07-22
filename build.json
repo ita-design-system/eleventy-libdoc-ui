@@ -22,27 +22,27 @@
             "neutral-800": "#252525",
             "neutral-900": "#000000",
 
-            "primary-100": "#FAFCFF",
-            "primary-200": "#E0EEFE",
-            "primary-300": "#7DB8F7",
-            "primary-400": "#3F96F3",
-            "primary-500": "#0074EF",
-            "primary-600": "#0463C9",
-            "primary-700": "#0853A3",
-            "primary-800": "#0B427C",
-            "primary-900": "#0F3156",
+            "primary-100": "#fafcff",
+            "primary-200": "#daeafb",
+            "primary-300": "#a5d0fd",
+            "primary-400": "#5dabfe",
+            "primary-500": "#0165d0",
+            "primary-600": "#0156b2",
+            "primary-700": "#03458c",
+            "primary-800": "#02366f",
+            "primary-900": "#01254b",
 
-            "success-100": "#e4f1dd",
-            "success-500": "#78ba56",
-            "success-900": "#182710",
+            "success-100": "#f2fbec",
+            "success-500": "#5cab33",
+            "success-900": "#2b650c",
+            
+            "warning-100": "#fff7eb",
+            "warning-500": "#EBA232",
+            "warning-900": "#87560b",
 
-            "warning-100": "#fdebd1",
-            "warning-500": "#F39D1A",
-            "warning-900": "#332003",
-
-            "danger-100": "#f9d7d4",
+            "danger-100": "#fef3f3",
             "danger-500": "#DF3528",
-            "danger-900": "#2e0a07"
+            "danger-900": "#760e06"
         },
         "fontSizes": {
             "1": "10px",
@@ -276,14 +276,6 @@
             "responsive": true,
             "generate_utility": false
         },
-        "column-gap": {
-            "prefix": "cgap",
-            "generate_from": "",
-            "values": ["3em"],
-            "names": [],
-            "responsive": true,
-            "generate_utility": false
-        },
         "gap": {
             "prefix": "gap",
             "generate_from": "spacings",
@@ -292,10 +284,18 @@
             "responsive": true,
             "generate_utility": false
         },
-        "--dsg-gap": {
-            "prefix": "gap",
+        "column-gap": {
+            "prefix": "cgap",
+            "generate_from": "",
+            "values": ["3em"],
+            "names": [],
+            "responsive": true,
+            "generate_utility": false
+        },
+        "row-gap": {
+            "prefix": "rgap",
             "generate_from": "spacings",
-            "values": [],
+            "values": ["0"],
             "names": [],
             "responsive": true,
             "generate_utility": false
@@ -377,8 +377,8 @@
         "max-height": {
             "prefix": "maxh",
             "generate_from": "",
-            "values": ["100%", "100vh", "80vh", "50vh", "200px", "300px"],
-            "names": ["100", "100vh", "80vh", "50vh", "200px", "300px"],
+            "values": ["100%", "100vh", "80vh", "50vh", "200px", "300px", "calc(100vh - 59px)"],
+            "names": ["100", "100vh", "80vh", "50vh", "200px", "300px", "sidebar"],
             "responsive": true,
             "generate_utility": false
         },
